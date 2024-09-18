@@ -4,6 +4,7 @@ const fs = require('fs');
 const  path = require('path');
 const commandHandler = require('./handlers/commandHandler');
 const eventHandler = require('./handlers/eventHandler');
+const slashCommandHandler = require('./handlers/slashCommandHandler');
 
 const client = new Client({ 
 	intents: [
@@ -16,9 +17,8 @@ const client = new Client({
 	] 
 });
 
-client.commands = new Collection();
-
 commandHandler(client);
+slashCommandHandler();
 eventHandler(client);
 
 
