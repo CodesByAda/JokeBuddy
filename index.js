@@ -1,5 +1,9 @@
-const { Client, Events, GatewayIntentBits } = require('discord.js');
+const { Client, Events, GatewayIntentBits, Collection } = require('discord.js');
 const { token } = require('./config.json');
+const fs = require('fs');
+const  path = require('path');
+const commandHandler = require('./handlers/commandHandler');
+const eventHandler = require('./handlers/eventHandler');
 
 const client = new Client({ 
 	intents: [
@@ -12,8 +16,10 @@ const client = new Client({
 	] 
 });
 
-client.once(Events.ClientReady, readyClient => {
-	console.log(`Ready! Logged in as ${readyClient.user.tag}`);
-});
+client.commands = new Collection();
+
+commandHandler(client);
+eventHandler(client);
+
 
 client.login(token);
