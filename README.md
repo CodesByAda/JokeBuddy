@@ -2,4 +2,4 @@
 JokeBuddy Discord Bot made using discord.js
 
 Author - AdarshAntony
-Work on progress.
+(Work on progress.)
