@@ -1,0 +1,15 @@
+{
+  "name": "jokebuddy",
+  "version": "1.0.0",
+  "description": "JokeBuddy Discord Bot made using discord.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Adarsh Antony",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.16.2"
+  }
+}
