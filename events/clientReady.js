@@ -1,11 +1,12 @@
-const { Events } = require("discord.js");
+const { Events, ActivityType, PresenceUpdateStatus } = require("discord.js");
 
 module.exports = {
     name: Events.ClientReady,
     once: true,
 
     execute(client) {
-        console.clear();
+        client.user.setActivity('your buddy!', {type: ActivityType.Watching})
+        client.user.setStatus(PresenceUpdateStatus.Idle);
         console.log(`Logged in as ${client.user.tag}`);
     },
 }
