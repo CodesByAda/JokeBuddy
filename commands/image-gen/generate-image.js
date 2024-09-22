@@ -5,6 +5,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('generate-image')
         .setDescription('AI Generated image according to your prompt')
+        .setNSFW(true)
         .addStringOption(option =>
             option.setName('prompt')
                 .setDescription('Brief your idea.')
