@@ -44,7 +44,7 @@ module.exports = {
     // Command execution
     async execute(interaction) {
         try {
-            const imgName = interaction.options.getString('image-name');
+            const imgName = interaction.options.getString('image-name').replace(/-/g, ' ');
             let topText = interaction.options.getString('top-text') || '';
             let bottomText = interaction.options.getString('bottom-text') || '';
 
