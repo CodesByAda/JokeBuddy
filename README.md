@@ -1,3 +1,4 @@
+# THIS PROJECT IS NO LONGER MAINTAINED!!!
 # 🤖 JokeBuddy
 
 **JokeBuddy** is an open-source Discord bot designed to bring laughter and creativity to your server! With a variety of entertaining commands, JokeBuddy ensures that there's never a dull moment. Feel free to contribute and make it even better!
